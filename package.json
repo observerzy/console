@@ -66,6 +66,7 @@
     "react-sortablejs": "^6.0.0",
     "react-virtualized": "^9.21.1",
     "recharts": "^1.8.5",
+    "sass": "^1.54.0",
     "sortablejs": "^1.12.0",
     "stream-array": "^1.1.2",
     "strip-ansi": "^5.2.0",
@@ -73,7 +74,7 @@
     "xterm": "3.8.1"
   },
   "scripts": {
-    "start": "concurrently -k --raw 'yarn dev:client' 'yarn dev:server'",
+    "start": "concurrently -k --raw \"yarn dev:client\" \"yarn dev:server\"",
     "build": "yarn build:client && yarn build:server",
     "dev:client": "cross-env NODE_ENV=development webpack-dev-server --config scripts/webpack.dev.js -w",
     "dev:server": "cross-env NODE_ENV=development nodemon -w ./common -w ./server -e js,yaml server/server.js",
@@ -156,7 +157,6 @@
     "jsdom": "^13.1.0",
     "lint-staged": "^7.2.2",
     "mini-css-extract-plugin": "^0.7.0",
-    "node-sass": "^4.13.1",
     "nodemon": "^1.15.1",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "postcss-flexbugs-fixes": "3.2.0",
